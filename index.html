@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-md col-5 text-center mt-5 bg-light p-5">
+    <p class="h3" id="titulo">Contact Us</p>
+    <form class="needs-validation" id="formulario" novalidate>
+      <div class="row">
+        <div class="col-sm-2 mb-4">
+          <img src="./img/user.svg" alt="" />
+        </div>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="primerNombre" placeholder="First Name" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 mb-4">
+          <img src="./img/user.svg" alt="" />
+        </div>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="segundoNombre" placeholder="Last Name" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 mb-4">
+          <img src="./img/mail.svg" alt="" id="email" />
+        </div>
+        <div class="col-sm-8">
+          <input type="email" class="form-control" id="mail" placeholder="Email Adrress" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 mb-4">
+          <img src="./img/phone.svg" alt="" />
+        </div>
+        <div class="col-sm-8">
+          <input type="number" class="form-control" id="celular" placeholder="Phone" maxlength="9" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 mb-4">
+          <img src="https://api.iconify.design/mdi:gender-male-female.svg?color=%2346a0fc" alt="" id="imgGenero"/>
+        </div>
+
+        <div class="col-sm-8 text-start mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="Radio1" value="Masculino" />
+            <label class="form-check-label" for="exampleRadios1">
+              Masculino
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="radio2" value="Femenino" />
+            <label class="form-check-label" for="exampleRadios2">
+              Femenino
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="radios3" value="Prefiero no decirlo" />
+            <label class="form-check-label" for="exampleRadios3">
+              Prefiero no decirlo
+            </label>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-sm-2 mb-4">
+          <img src="./img/calendar.svg" alt="" />
+        </div>
+        <div class="col-sm-8">
+          <input type="date" class="form-control" id="calendario"  maxlength="9" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 mb-4">
+          <img src="./img/edit.svg" alt="" />
+        </div>
+        <div class="col-sm-8">
+          <textarea class="form-control" id="mensaje" placeholder="Enter your massage for us here. We will get back."
+            style="height: 100px" required></textarea>
+        </div>
+      </div>
+      <div class="col-12 mt-3">
+        <button class="btn btn-primary" id="btnSubmit" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script src="valid-jquery.js"></script>
+</body>
+
+</html>
