@@ -10,7 +10,7 @@ $(document).ready(function()
         let  mensaje = ($("#mensaje").val());
         let genero = ($('input:radio[name=genero]:checked').val());
         
-            alert(`${primerNombre  + " " + segundoNombre + " " + mail  + " " + celular  + " " + calendario+ " " + genero+ " " +  mensaje }`)
+        alert(`Los datos del cliente son: \nNombre: ${primerNombre} \nApellido: ${segundoNombre} \nCorreo: ${mail} \nGénero: ${genero} \nFecha Nacimiento: ${calendario} \nCelular: ${celular} \nMensaje: ${mensaje}`)
        
 	});
 });
